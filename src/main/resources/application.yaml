@@ -1,0 +1,10 @@
+server:
+  port: 8099
+
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8090/realms/crs_auth/protocol/openid-connect/certs
